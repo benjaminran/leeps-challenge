@@ -43,7 +43,7 @@ Programming problem for application to UCSC LEEPS Lab Programmer position.
 
     2. slider and text box, display result in box if used slider, allow typing directly
 
-3. Calculate the user's payoff using the following function: ![image alt text](image_0.gif)
+3. Calculate the user's payoff using the following function: profit = (1 - (UserValue - StochasticValue)<sup>2</sup>)
 
 4. Implement the ability to start, stop and reset the random process.
 
