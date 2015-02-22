@@ -1,0 +1,21 @@
+/*** Demo 1 - Guess the Number ***/
+
+/* Slider */
+.user-slider {
+	
+}
+
+#placeholder {
+	margin-bottom: 20px;
+}
+
+/* Miscellaneous */
+
+.intro-header {
+    background-color: #f1b324;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 5%;
+}
