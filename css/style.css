@@ -2,10 +2,26 @@
 
 /* Slider */
 .user-slider {
-	
+	margin-top: 10px;
 }
 
-#placeholder {
+#demo1-hint p {
+	font-weight: 400;
+	font-style: italic;
+}
+
+/* Controls */
+#demo1-controls {
+	text-align: center;
+}
+
+#demo1-reset {
+	margin-left: 10px;
+	font-weight: 400;
+}
+
+#demo1-graph {
+	height: 300px;
 	margin-bottom: 20px;
 }
 

@@ -122,8 +122,14 @@
                     <p class="lead">This will be where I include the primary content, where the user guesses the value of a random number and their payoff is graphed.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <div  id="placeholder" style="width: 300px; height: 300px;"></div>
-                    <div id="demo1-controls"></div>
+                    <div  id="demo1-graph"></div>
+                    <div id="demo1-controls">
+                        <a href="javascript:void(0)" onclick="javascript:playPauseClicked()" class="btn btn-default btn-sm" id="demo1-playPause" title="spacebar"><i class="fa fa-play"></i> Start</a>
+                        <a href="javaascript:void(0)" onclick="javascript:resetClicked()" id="demo1-reset"><small>Reset</small></a>
+                    </div>
+                    <div id="demo1-hint">
+                        <p>What's your guess?</p>
+                    </div>
                     <div class="user-slider"></div>
                 </div>
             </div>
