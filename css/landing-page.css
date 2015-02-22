@@ -35,14 +35,15 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
-    background-size: cover;
+    /*background: url(../img/leeps-logo.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;*/
+    background-color: #f1b324;
 }
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 5%;
 }
 
 .intro-message > h1 {

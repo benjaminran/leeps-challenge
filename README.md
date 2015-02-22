@@ -1,12 +1,20 @@
 # leeps-challenge
 Programming problem for application to UCSC LEEPS Lab Programmer position.
 
+## Overview
+
+This project does a thing.
+
 ## Acknowledgements
 
 This project uses the following frameworks:
-* Bootstrap
+
+* Bootstrap (3)
+
   * This project was adapted from [Start Bootstrap](http://startbootstrap.com/)'s [Landing Page](http://startbootstrap.com/template-overviews/landing-page/) template.
+
     * The template was used in accordance with its [license](http://www.apache.org/licenses/LICENSE-2.0).
+
 * Flot
 
 ### Thoughts
