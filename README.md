@@ -4,7 +4,7 @@ Programming problem for application to UCSC LEEPS Lab Programmer position.
 
 ## Overview
 
-This project is a web page written in HTML5, CSS, Javascript. It shows some programming ability, but is also largely a demonstration of my awareness that good design is important. I tried to make the page very user friendly with large, orgizational decisions intended to keep the page layout from being overwhelming. Also, on a smaller scale I did things like bind the spacebar to the start/pause button and hide the mathematical payoff function for users not interested in the comlpexities behind the demo. This is not the pinnacle of my programming ability, but I feel those touches are some of the most important to making this webpage objectively user-friendly.
+This project is a web page written in HTML5, CSS, Javascript. It shows some of my programming ability, but is also largely a demonstration of my design sense. I tried to make the page user friendly with large, orgizational decisions intended to keep the page layout from being overwhelming. Also, on a smaller scale I did things like bind the spacebar to the start/pause button for convenience and hide the mathematical payoff function for users not interested in the complexities behind the demo. This is not the pinnacle of my programming ability, but I feel those touches are some of the most important to making this webpage objectively user-friendly.
 
 
 ## Acknowledgements
@@ -19,6 +19,7 @@ This project uses the following frameworks/libraries:
   * This library is used to plot the data in a line graph.
 * jQuery UI Slider Pips
   * This project is used to generate, customize, and interact with the slider bar where the user enters their guess.
+  * More information can be found [here](https://github.com/simeydotme/jQuery-ui-Slider-Pips).
 
 All images included are used in accordance with their licences.
 * The bottom banner image (Autumn leaves) is from [Stocksnap.io](https://stocksnap.io/photo/2751159434) where it was uploaded by Rula Sibai.
