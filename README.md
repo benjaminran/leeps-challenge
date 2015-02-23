@@ -1,6 +1,6 @@
 # leeps-challenge
 
-Programming problem for application to UCSC LEEPS Lab Programmer position.
+Programming problem for the UCSC LEEPS Lab Programming position application
 
 ## Overview
 
