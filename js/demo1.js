@@ -1,15 +1,13 @@
-/* TODO: bind spacebar to play/pause
-*/
-
 // Global Constants
-var TICK_PERIOD_MS = 500;
-var VIEWPORT_WIDTH = 30;
+var TICK_PERIOD_MS = 1000;
+var VIEWPORT_WIDTH = 20;
 var SPACE_CODE = 32;
 
 // UI references
 var graph;
 var slider;
 var playPause, reset;
+var currentProfitSpan, totalProfitSpan;
 
 // State variables
 var paused = true;
@@ -21,8 +19,15 @@ var userGuess = 0;
 var profitSeries = [];
 var stochValueSeries = [];
 var userGuessSeries = [];
+var currentProfit;
+var totalProfit = 0;
 
 /*** Setup functions ***/
+
+function setupScoreboard() {
+	currentProfitSpan = $("#demo1-currentProfit");
+	totalProfitSpan = $("#demo1-totalProfit");
+}
 
 function setupControls() {
 	playPause = $("#demo1-playPause");
@@ -66,13 +71,7 @@ function setupSlider() {
 function setupGraph() {
 	graph = $("#demo1-graph");
 	graph.width(slider.width()); // Make graph match the slider's width
-	plotBlankGraph();
-}
-
-/*** Plotting helper function ***/
-function plotBlankGraph() {
-	var options = { xaxis: { show: false } };
-	$.plot(graph, [ [0, 0] ], options);
+	mainLoopTick();
 }
 
 /*** Execution flow control helper functions ***/
@@ -99,8 +98,10 @@ function resetClicked() {
 	userGuessSeries = [];
 	stochValueSeries = [];
 	profitSeries = [];
+	totalProfit = 0;
 	pause();
-	plotBlankGraph();
+	mainLoopTick(); // plots blank graph
+	clearScoreboard();
 }
 
 /*** Data generation helper functions ***/
@@ -108,8 +109,21 @@ function addDataPoint(series, value) {
 	series.push([series.length, value]);
 }
 
-function calcProfit(userGuess) {
-	return 1 - Math.pow((userGuess-stochValue), 2);
+function calcProfit() {
+	currentProfit = 1 - Math.pow((userGuess-stochValue), 2);
+	return currentProfit;
+}
+
+/*** UI update functions ***/
+// Print current stats, limiting string length to 4 characters
+function updateScoreboard() {
+	currentProfitSpan.html(currentProfit.toString().substring(0,5));
+	totalProfitSpan.html(totalProfit.toString().substring(0,5));
+}
+
+function clearScoreboard() {
+	currentProfitSpan.html("n/a");
+	totalProfitSpan.html("n/a");
 }
 
 /*** Execution Loop ***/
@@ -117,9 +131,11 @@ function mainLoopTick() {
 	// Get next stochastic value
 	stochValue = Math.random();
 	// Update data
+	calcProfit();
+	totalProfit += currentProfit;
 	addDataPoint(stochValueSeries, stochValue);
 	addDataPoint(userGuessSeries, userGuess);
-	addDataPoint(profitSeries, calcProfit(userGuess));
+	addDataPoint(profitSeries, currentProfit);
 	// Calculate graph viewport bounds
 	var xmin, xmax;
 	if(profitSeries.length > VIEWPORT_WIDTH) {
@@ -139,19 +155,26 @@ function mainLoopTick() {
     		show: false,
     		min: xmin,
     		max: xmax
+    	},
+    	yaxis: {
+    		min: 0,
+    		max: 1
     	}
 	};
 	var data = [
 		{ label: "Profit", data: profitSeries, fill: true, lines: { fill:true } },
-		{ label: "Stochastic Value", data: stochValueSeries },
+		{ label: "Computer Value", data: stochValueSeries },
 		{ label: "User Guess", data: userGuessSeries }
 	]
 	$.plot(graph, data, options);
+	updateScoreboard();
 }
 
 /*** Entry point ***/
 $(window).load(function() {
+	setupScoreboard();
 	setupControls();
 	setupSlider();
 	setupGraph();
+	clearScoreboard();
 });

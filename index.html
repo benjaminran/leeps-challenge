@@ -26,7 +26,7 @@
     <link href="css/landing-page.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -119,13 +119,16 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Demo:<br>Guess the Number</h2>
-                    <p class="lead">This will be where I include the primary content, where the user guesses the value of a random number and their payoff is graphed.</p>
+                    <p class="lead">The computer comes up with a sequence of numbers between 0 and 1. Use the slider to make a guess about what the number is. You get more profit the closer you get to the real value.</p>
+                    <p class="more">Profit is calculated with the following formula: <img src="img/profit-formula.gif"></p>
+                    <a href="javascript:void(0)" onclick="javascript:descriptionMoreClicked()" id="demo1-more"><small>Math whiz?</small></a>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <div id="demo1-scoreboard"><span>Current Profit: </span><span id="demo1-currentProfit">n/a</span><span>; &nbsp; Total Profit: </span><span id="demo1-totalProfit">n/a</span></div>
                     <div  id="demo1-graph"></div>
                     <div id="demo1-controls">
                         <a href="javascript:void(0)" onclick="javascript:playPauseClicked()" class="btn btn-default btn-sm" id="demo1-playPause" title="spacebar"><i class="fa fa-play"></i> Start</a>
-                        <a href="javaascript:void(0)" onclick="javascript:resetClicked()" id="demo1-reset"><small>Reset</small></a>
+                        <a href="javascript:void(0)" onclick="javascript:resetClicked()" id="demo1-reset"><small>Reset</small></a>
                     </div>
                     <div id="demo1-hint">
                         <p>What's your guess?</p>
@@ -140,20 +143,23 @@
     </div>
     <!-- /.content-section-a -->
 
-    <div class="content-section-b" style="background: #fdfd96;">
+    <a  name="about"></a>
+    <div class="content-section-b">
 
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
+                <!-- <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6"> -->
+                <div class="col-lg-6 col-md-offset-3 text-center">
+                    <hr class="section-heading-spacer center">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
-                    <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+                    <h2 class="section-heading">About</h2>
+                    <p class="lead">This is my submission for the LEEPS Lab Programmer Position.</p>
+                    <p style="font-weight: 400;">I'm a sophomore at UCSC with experience in mobile app development and web development. Currently I'm working on an Android app that analyzes audio and collects intonation information. My interests include digital signal processing and complex data analysis. On the side, I play trumpet the UCSC wind ensemble, UCSC jazz combo, a jazz septet, a brass quintet, and a funk/R&B band. </p>
                 </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                <!-- <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="img/dog.png" alt="">
-                </div>
+                </div> -->
             </div>
 
         </div>
@@ -161,30 +167,6 @@
 
     </div>
     <!-- /.content-section-b -->
-
-    <a  name="about"></a>
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">About</h2>
-                    <p class="lead">This is my submission for the LEEPS Lab Programmer Position.</p>
-                    <p style="font-weight: 400;">I'm a sophomore at UCSC with a range of experience from mobile app development to web development to embeddes systems programming. My interests include digital signal processing and jazz music.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/phones.png" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
 
 	<a  name="contact"></a>
     <div class="banner">
@@ -260,7 +242,8 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom javascript -->
-    <script src="js/main.js"></script>
+    <script src="js/demo1.js"></script>
+    <script src="js/misc.js"></script>
 
 </body>
 
