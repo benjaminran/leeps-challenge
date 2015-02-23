@@ -3,7 +3,7 @@ Programming problem for the UCSC LEEPS Lab Programming position application
 
 ## Overview
 
-This project is a web page written in HTML5, CSS, Javascript. It is designed to be mobile-friendly and I tried to keep the code concise and easily maintainable. I organized the page visually with a navigation bar and three main sections: the number-guessing section, an instructions/description section, and a quick "about" section to put the page in context.  On a smaller scale I did things like bind the spacebar to the start/pause button for convenience and hide the mathematical payoff function for users not interested in the complexities behind the demo. I feel these touches are all important in crafting an ideal user experience.
+This project is a web page written in HTML5, CSS, Javascript. It is designed to be mobile-friendly and the code has been kept concise and easily maintainable. The page is visually organized in three main sections: the number-guessing section, an instructions/description section, and a quick "about" section to put the page in context.  On a smaller scale I did things like bind the spacebar to the start/pause button for convenience and hide the mathematical payoff function for users not interested in the complexities behind the demo. I feel these touches are all important in crafting an ideal user experience.
 
 
 ## Acknowledgements
