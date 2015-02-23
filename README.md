@@ -4,7 +4,7 @@ Programming problem for application to UCSC LEEPS Lab Programmer position.
 
 ## Overview
 
-This project is a web page written in HTML5, CSS, Javascript. It shows some of my programming ability, but is also largely a demonstration of my design sense. I tried to make the page user friendly with large, orgizational decisions intended to keep the page layout from being overwhelming. Also, on a smaller scale I did things like bind the spacebar to the start/pause button for convenience and hide the mathematical payoff function for users not interested in the complexities behind the demo. This is not the pinnacle of my programming ability, but I feel those touches are some of the most important to making this webpage objectively user-friendly.
+This project is a web page written in HTML5, CSS, Javascript. It shows some of my programming ability, but is also largely a demonstration of my design sense. I tried to make the page user friendly with large, orgizational decisions intended to keep the page layout from being overwhelming. On a smaller scale I did things like bind the spacebar to the start/pause button for convenience and hide the mathematical payoff function for users not interested in the complexities behind the demo. This is not the pinnacle of my programming ability, but I feel these touches are some of the most important in making the webpage objectively user-friendly.
 
 
 ## Acknowledgements
@@ -17,6 +17,7 @@ This project uses the following frameworks/libraries:
     * The template uses several more libraries that were not mentioned here for brevity. For more info, see the template documentation.
 * Flot
   * This library is used to plot the data in a line graph.
+  * More information can be found [here](http://www.flotcharts.org/).
 * jQuery UI Slider Pips
   * This project is used to generate, customize, and interact with the slider bar where the user enters their guess.
   * More information can be found [here](https://github.com/simeydotme/jQuery-ui-Slider-Pips).
