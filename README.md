@@ -13,8 +13,7 @@ This project uses the following frameworks/libraries:
 * jQuery UI
 * Bootstrap (3)
   * This project is adapted from [Start Bootstrap](http://startbootstrap.com/)'s [Landing Page](http://startbootstrap.com/template-overviews/landing-page/) template.
-    * The template is used in accordance with the its [license](http://www.apache.org/licenses/LICENSE-2.0).
-    * The template uses several more libraries that were not mentioned here for brevity. For more info, see the template documentation.
+    * The template is used in accordance with the its [license](https://github.com/IronSummitMedia/startbootstrap-landing-page/blob/gh-pages/LICENSE).
 * Flot
   * This library is used to plot the data in a line graph.
   * More information can be found [here](http://www.flotcharts.org/).
@@ -28,6 +27,7 @@ All images included are used in accordance with their licences.
 
 
 ## Features implemented
+Taken from the programming challenge specifications.
 
 #### Requirements
 1. A value that varies stochastically over time, bounded between 0 and 1.
