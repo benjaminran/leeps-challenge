@@ -27,7 +27,7 @@ All images included are used in accordance with their licences.
 
 
 ## Features implemented
-Taken from the programming challenge specifications.
+Taken from the programming problem [specifications](http://leeps.ucsc.edu/misc/page/programming-problems/).
 
 #### Requirements
 1. A value that varies stochastically over time, bounded between 0 and 1.
