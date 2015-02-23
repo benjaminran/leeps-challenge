@@ -8,7 +8,6 @@ This project does a thing.
 
 
 ## Acknowledgements
-
 This project uses the following frameworks/libraries:
 * jQuery
 * jQuery UI
@@ -26,7 +25,6 @@ All images included are used in accordance with their licences.
   * The image is under a Creative Commons CCO license.
 
 ### Thoughts
-
 * Should include clear & concise user instructions (use cookie to only show first time?)
 * Data structures to use?
     * int stoch, int uservalue, int profit
@@ -44,43 +42,19 @@ All images included are used in accordance with their licences.
         * could include leading panel with paragraphs about me and challenge
 
 
-### Requirements
+### Features implemented
 
+#### Requirements
 1. A value that varies stochastically over time, bounded between 0 and 1.
-    1. Math.random()
 2. A user selected value between 0 and 1.
-    2. slider and text box, display result in box if used slider, allow typing directly
 3. Calculate the user's payoff using the following function: profit = (1 - (UserValue - StochasticValue)<sup>2</sup>)
 4. Implement the ability to start, stop and reset the random process.
-    3. font-awesome icons
 5. Implement some user interface to select the user value, and see current profit (but default hide stochastic value).
-    4. animate current profit?
 6. Track and show cumulative profits over time.
-    5. keep track of cumulative profits with int: [0, infinity)
-        1. hot-cold w/ subtle red/blue?
-    6. use flot to make graph
 
-
-### Extras
-
+#### Extras
 * Plot time series of user values
-    * secondary graph
 * Plot times series of stochastic values.
 * Plot current and/or total payoffs.
-* Show hide current stochastic value
-* Add a text area to allow the user to change the payoff function.
-## 2. Particle Simulation (Optional)
-### Requirements
-1. Canvas element with particles
-2. Particles move in random direction with some velocity
-3. Particles collide with canvas "walls" and bounce back
-4. Alternatively, canvas wraps around (e.g. Pacman)
-5. Ability to add more particles with mouse
-6. Ability to reset simulation
 
 
-### Extras
-
-* Particles collide with each other
-* Particles change color
-* Particles leave "trail"
