@@ -4,7 +4,7 @@ Programming problem for application to UCSC LEEPS Lab Programmer position.
 
 ## Overview
 
-This project is a web page written in HTML5, CSS, Javascript. It shows some of my programming ability, but is also largely a demonstration of my design sense. I tried to make the page user friendly with large, orgizational decisions intended to keep the page layout from being overwhelming. On a smaller scale I did things like bind the spacebar to the start/pause button for convenience and hide the mathematical payoff function for users not interested in the complexities behind the demo. This is not the pinnacle of my programming ability, but I feel these touches are some of the most important in making the webpage objectively user-friendly.
+This project is a web page written in HTML5, CSS, Javascript. It is designed to be mobile-friendly and I tried to keep the code concise and easily maintainable. I organized the page visually with a navigation bar and three main sections: the number-guessing section, an instructions/description section, and a quick "about" section to put the page in context.  On a smaller scale I did things like bind the spacebar to the start/pause button for convenience and hide the mathematical payoff function for users not interested in the complexities behind the demo. I feel these touches are all important in crafting an ideal user experience.
 
 
 ## Acknowledgements
