@@ -1,5 +1,4 @@
 # leeps-challenge
-
 Programming problem for the UCSC LEEPS Lab Programming position application
 
 ## Overview
