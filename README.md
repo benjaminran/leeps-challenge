@@ -4,7 +4,7 @@ Programming problem for application to UCSC LEEPS Lab Programmer position.
 
 ## Overview
 
-This project does a thing.
+This project is a web page written in HTML5, CSS, Javascript. It shows some programming ability, but is also largely a demonstration of my awareness that good design is important. I tried to make the page very user friendly with large, orgizational decisions intended to keep the page layout from being overwhelming. Also, on a smaller scale I did things like bind the spacebar to the start/pause button and hide the mathematical payoff function for users not interested in the comlpexities behind the demo. This is not the pinnacle of my programming ability, but I feel those touches are some of the most important to making this webpage objectively user-friendly.
 
 
 ## Acknowledgements
@@ -24,25 +24,8 @@ All images included are used in accordance with their licences.
 * The bottom banner image (Autumn leaves) is from [Stocksnap.io](https://stocksnap.io/photo/2751159434) where it was uploaded by Rula Sibai.
   * The image is under a Creative Commons CCO license.
 
-### Thoughts
-* Should include clear & concise user instructions (use cookie to only show first time?)
-* Data structures to use?
-    * int stoch, int uservalue, int profit
-        * all between 0 and 1
-* Graph of data
-    * Main graph: cumulative profit
-    * Secondary graph: user selected and stochastic values
-* Color Scheme
-    * ~Academic, so primarily black/white
-    * Accent color: Dark blue? + Banana slug yellow? Blue shadow (+?)?
-        * Deep UCSC yellow: #f1b324
-* Overall Layout
-    * tabs for part 1 and part 2 with main app at top of content description below
-    * + more modern sections on single page with right-aligned app 1 and left description 1, then left-aligned app 2 and right description 2
-        * could include leading panel with paragraphs about me and challenge
 
-
-### Features implemented
+## Features implemented
 
 #### Requirements
 1. A value that varies stochastically over time, bounded between 0 and 1.
